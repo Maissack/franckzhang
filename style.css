@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer {
   display: flex;
   justify-content: flex-end;
@@ -13,7 +14,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  margin-top: 20vh;
 }
 .navbar .navbar-left {
   display: flex;
@@ -30,9 +30,18 @@ footer {
 }
 .navbar .logo img {
   filter: brightness(0) invert(1);
+  transition: width 0.3s ease, height 0.3s ease;
 }
-.navbar .logo {
-  padding-left: 10px;
+.navbar .logo img:hover {
+  height: 30px;
+  width: 30px;
+}
+.navbar .logo_profil img {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.navbar .logo_profil img:hover {
+  height: 55px;
+  width: 55px;
 }
 
 body {
@@ -41,12 +50,14 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+  max-height: 800px;
+  margin: auto; /* Centre l'élément horizontalement */
+  margin-top: calc((100vh - 600px) / 2); /* Centre l'élément verticalement */
   border: 2px solid #ccc;
 }
 
 header, .content, footer {
-  padding: 20px;
+  padding: 40px;
 }
 
 .content {
@@ -73,6 +84,8 @@ header, .content, footer {
   font-size: 16px;
   font-weight: 200;
   color: rgb(209, 209, 209);
+  border-left: 1px solid white;
+  padding-left: 30px;
 }
 
 .projects {
@@ -92,10 +105,32 @@ header, .content, footer {
   margin-bottom: 8px;
 }
 .projects ul li a {
-  text-decoration: none;
-  color: white;
+  color: rgb(209, 209, 209);
   font-size: 16px;
   font-weight: 200;
+  text-decoration: none;
+  transition: font-size 0.3s, color 0.3s; /* Ajout de la transition pour la taille et la couleur du texte */
+  position: relative; /* Positionnement relatif pour contenir l'élément ::before */
+}
+.projects ul li a:hover {
+  font-size: 110%;
+  color: rgb(255, 255, 255);
+}
+.projects ul li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -3px; /* Ajustement de la position du soulignement */
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.4s ease;
+}
+.projects ul li a:hover::before {
+  transform: scaleX(1); /* Affichage du soulignement au survol */
 }
 
 * {

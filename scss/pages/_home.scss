@@ -8,10 +8,13 @@ body {
 
 .container {
     max-width: 1200px; 
-    margin: 0 auto; 
+    max-height: 800px;
+    margin: auto; /* Centre l'élément horizontalement */
+    margin-top: calc((100vh - 600px) / 2); /* Centre l'élément verticalement */
     border: 2px solid #ccc; 
 }
 
 header, .content, footer {
-    padding: 20px;
+    padding: 40px;
 }
+

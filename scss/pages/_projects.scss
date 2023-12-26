@@ -1,8 +1,6 @@
 @use '../utils/_typos.scss' as *;
 @use '../variables/_variables.scss' as *;
 
-
-
 .projects {
     text-align: left;
 
@@ -21,12 +19,37 @@
             margin-bottom: 8px;
 
             a {
-                text-decoration: none;
-                color: $color-list_projects;
+                color: $color-h1-h2-p;
                 font-size: $font_size_p-desktop;
                 font-weight: $font_weight_p;
+                text-decoration: none;
+                transition: font-size 0.3s, color 0.3s; /* Ajout de la transition pour la taille et la couleur du texte */
+
+                &:hover {
+                    font-size: 110%; // Taille du texte agrandi au survol
+                    color: $color-white;
+                }
+
+                position: relative; /* Positionnement relatif pour contenir l'élément ::before */
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    height: 2px;
+                    bottom: -3px; /* Ajustement de la position du soulignement */
+                    left: 0;
+                    background-color: $color-white;
+                    transform: scaleX(0);
+                    transform-origin: top left;
+                    transition: transform 0.4s ease;
+                }
+
+                &:hover::before {
+                    transform: scaleX(1); /* Affichage du soulignement au survol */
+                }
             }
         }
     }
-
 }
