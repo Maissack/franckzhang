@@ -1,14 +1,24 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+
 .presentation {
     text-align: left;
     max-width: 600px;
     padding: 20px;
     color: white;
-}
-
-
-.presentation {
     transition: transform 0.5s;
+
+    h1 {
+        font-size: $font_size_h1-desktop;
+        
+    }
+
+    p {
+        font-size: $font_size_p-desktop;
+    }
 }
+
 .description {
     position: absolute;
     top: 0;
@@ -19,6 +29,7 @@
     transform: translateX(100%);
     transition: transform 0.5s;
 }
+
 .description.active {
     transform: translateX(0);
 }

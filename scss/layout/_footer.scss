@@ -1,3 +1,6 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
 footer {
     display: flex;
     justify-content: flex-end;
@@ -6,3 +9,4 @@ footer {
     padding: 10px;
     color: white;
 }
+

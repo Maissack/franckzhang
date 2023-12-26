@@ -1,0 +1,32 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+
+
+.projects {
+    text-align: left;
+    color: white;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: $font_size_h2-desktop;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 8px;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    .project-description {
+        display: none; 
+    }
+}

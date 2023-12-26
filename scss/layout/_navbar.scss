@@ -1,0 +1,30 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20vh; /* Décalage de 20% de la hauteur de la vue */
+    
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        margin-left: 20%;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+        margin-right: 20%;
+    }
+
+    .logo-container:first-child {
+        margin-left: 0; /* Annule la marge gauche pour le premier élément */
+    }
+
+    .logo img {
+        filter: brightness(0) invert(1);
+    }
+}

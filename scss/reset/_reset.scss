@@ -1,9 +1,5 @@
-@import url(component/home.css);
-@import url(component/navbar.css);
-@import url(component/content.css);
-@import url(component/presentation.css);
-@import url(component/projects.css);
-@import url(component/footer.css);
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
 
 * {
     margin: 0;
@@ -27,5 +23,3 @@ html{
 header, .content, footer {
     padding: 20px;
 }
-
-
