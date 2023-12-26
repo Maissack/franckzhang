@@ -1,9 +1,8 @@
-@charset "UTF-8";
 footer {
   display: flex;
   justify-content: flex-end;
-  right: 20%; /* 20% du bord droit */
-  bottom: 20%; /* 20% du bas */
+  right: 20%;
+  bottom: 20%;
   padding: 10px;
   font-size: 16px;
   color: rgb(209, 209, 209);
@@ -14,7 +13,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  margin-top: 20vh; /* Décalage de 20% de la hauteur de la vue */
+  margin-top: 20vh;
 }
 .navbar .navbar-left {
   display: flex;
@@ -27,23 +26,36 @@ footer {
   margin-right: 20%;
 }
 .navbar .logo-container:first-child {
-  margin-left: 0; /* Annule la marge gauche pour le premier élément */
+  margin-left: 0;
 }
 .navbar .logo img {
   filter: brightness(0) invert(1);
+}
+.navbar .logo {
+  padding-left: 10px;
 }
 
 body {
   background-color: #10162a;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+}
+
+header, .content, footer {
+  padding: 20px;
+}
+
 .content {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Alignement en haut */
+  align-items: flex-start;
   max-width: 1200px;
-  margin: 20px auto; /* Marge autour du contenu */
-  padding: 0 20px; /* Espacement intérieur */
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
 .presentation {
@@ -61,21 +73,6 @@ body {
   font-size: 16px;
   font-weight: 200;
   color: rgb(209, 209, 209);
-}
-
-.description {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f1f1f1;
-  transform: translateX(100%);
-  transition: transform 0.5s;
-}
-
-.description.active {
-  transform: translateX(0);
 }
 
 .projects {
@@ -100,9 +97,6 @@ body {
   font-size: 16px;
   font-weight: 200;
 }
-.projects .project-description {
-  display: none;
-}
 
 * {
   margin: 0;
@@ -112,16 +106,6 @@ body {
 
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.container {
-  max-width: 1200px; /* Largeur maximale du conteneur */
-  margin: 0 auto; /* Centrage horizontale du conteneur */
-  border: 2px solid #ccc; /* Couleur et épaisseur de la bordure */
-}
-
-header, .content, footer {
-  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

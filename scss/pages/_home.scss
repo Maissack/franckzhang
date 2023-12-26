@@ -5,3 +5,13 @@
 body {
     background-color: #10162Aff;
 }
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    border: 2px solid #ccc; 
+}
+
+header, .content, footer {
+    padding: 20px;
+}

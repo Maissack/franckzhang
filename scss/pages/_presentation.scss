@@ -21,17 +21,3 @@
     }
 }
 
-.description {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f1f1f1;
-    transform: translateX(100%);
-    transition: transform 0.5s;
-}
-
-.description.active {
-    transform: translateX(0);
-}

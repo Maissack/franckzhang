@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    margin-top: 20vh; /* Décalage de 20% de la hauteur de la vue */
+    margin-top: 20vh;
     
     .navbar-left {
         display: flex;
@@ -21,10 +21,15 @@
     }
 
     .logo-container:first-child {
-        margin-left: 0; /* Annule la marge gauche pour le premier élément */
+        margin-left: 0;
     }
 
     .logo img {
         filter: brightness(0) invert(1);
+    }
+
+    .logo {
+        padding-left: 10px;
+        
     }
 }
