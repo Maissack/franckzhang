@@ -5,11 +5,12 @@
 
 .projects {
     text-align: left;
-    color: white;
 
     h2 {
         margin-bottom: 10px;
         font-size: $font_size_h2-desktop;
+        font-weight: $font_weight_h2;
+        color: $color-h1-h2-p;
     }
 
     ul {
@@ -21,7 +22,9 @@
 
             a {
                 text-decoration: none;
-                color: white;
+                color: $color-list_projects;
+                font-size: $font_size_p-desktop;
+                font-weight: $font_weight_p;
             }
         }
     }

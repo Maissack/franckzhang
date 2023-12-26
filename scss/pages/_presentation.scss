@@ -6,16 +6,18 @@
     text-align: left;
     max-width: 600px;
     padding: 20px;
-    color: white;
     transition: transform 0.5s;
 
     h1 {
         font-size: $font_size_h1-desktop;
-        
+        font-weight: $font_weight_h1;
+        color: $color-h1-h2-p;
     }
 
     p {
         font-size: $font_size_p-desktop;
+        font-weight: $font_weight_p;
+        color: $color-h1-h2-p;
     }
 }
 
