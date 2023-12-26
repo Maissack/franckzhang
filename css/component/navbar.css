@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0; 
+    padding: 15px;
+}
+
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-container {
+    margin-left: 10px;
+}
+
+
+
+.logo img {
+    filter: brightness(0) invert(1);
+}
