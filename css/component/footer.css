@@ -1,0 +1,8 @@
+footer {
+    display: flex;
+    justify-content: flex-end;
+    right: 20%; /* 20% du bord droit */
+    bottom: 20%; /* 20% du bas */
+    padding: 10px;
+    color: white;
+}

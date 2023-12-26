@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
     <header>
         <nav class="navbar">
+
             <div class="navbar-left">
                 <a href="index.html" class="logo_profil">
                 
@@ -24,13 +26,13 @@
                 </div>
                 <div class="logo">
                     
-                    <a href="#" class="logo">
+                    <a href="https://github.com/Maissack" class="logo">
                         <img src="img/github.svg" alt="Logo 2" width="50" height="50">
                     </a>
                 </div>
                 <div class="logo">
                     
-                    <a href="#" class="logo">
+                    <a href="https://www.linkedin.com/in/franck-zhang-iim/" class="logo">
                         <img src="img/linkedin.svg" alt="Logo 3" width="50" height="50">
                     </a>
                 </div>
@@ -38,6 +40,61 @@
         </nav>
     </header>
 
-    
+    <div class="content">
+
+        <div class="presentation">
+            <h1>Welcome.</h1>
+            <p>I'm Franck ZHANG, a passionate Developper Full Stack from Paris. <br> 
+                My journey in the world of development has been an exciting exploration of new technologies, collaborative projects, and continuous learning.
+            </p>
+        </div>
+
+
+        <div class="projects">
+            <h2>Project</h2>
+            <ul>
+                <li><a href="#" onclick="showProjectDescription('achaka')">Achaka Conseils</a></li>
+                <li><a href="#" onclick="showProjectDescription('conquest')">Conquest of Kingdoms</a></li>
+                <li><a href="#" onclick="showProjectDescription('mongoo')">Mongoo</a></li>
+                <li><a href="#" onclick="showProjectDescription('homepod')">HomePod mini</a></li>
+            </ul>
+        </div>
+        
+        <div class="project-description achaka-desc" style="display: none;">
+            <!-- Description du projet Achaka Conseils -->
+            <p>Description pour le projet Achaka Conseils.</p>
+        </div>
+        
+        <div class="project-description conquest-desc" style="display: none;">
+            <!-- Description du projet Conquest of Kingdoms -->
+            <p>Description pour le projet Conquest of Kingdoms.</p>
+        </div>
+        
+        <div class="project-description mongoo-desc" style="display: none;">
+            <!-- Description du projet Mongoo -->
+            <p>Description pour le projet Mongoo.</p>
+        </div>
+        
+        <div class="project-description homepod-desc" style="display: none;">
+            <!-- Description du projet HomePod mini -->
+            <p>Description pour le projet HomePod mini.</p>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <p>©<span id="currentYear"></span> franckzhang.com</p>
+    </footer>
+</div>
+
+
+    <script src="js/achaka-conseils.js"></script>
+    <script src="js/footer.js"></script>
+
 </body>
+
+
+
 </html>

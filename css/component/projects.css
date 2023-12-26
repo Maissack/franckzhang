@@ -1,0 +1,30 @@
+/* Styles pour la section des projets */
+
+
+.projects {
+    text-align: left;
+    color: white;
+}
+
+.projects h2 {
+    margin-bottom: 10px;
+}
+
+.projects ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.projects li {
+    margin-bottom: 8px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.project-description {
+    display: none; /* Masquer toutes les descriptions de projet par défaut */
+}
