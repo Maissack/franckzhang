@@ -1,14 +1,30 @@
 @use '../utils/_typos.scss' as *;
 @use '../variables/_variables.scss' as *;
 
-
 .content {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start; 
-    max-width: 1200px;
-    margin: 20px auto; 
-    padding: 0 20px; 
 }
 
+.presentation,
+.projects {
+    flex: 1; 
+    margin-right: 20px; 
+}
 
+.projects {
+    margin-top: 40px; 
+    
+}
+
+@media screen and (max-width: 1068px) {
+    .content {
+        flex-direction: column; 
+    }
+
+    .presentation,
+    .projects { 
+        width: 100%;
+        margin-right: 0; 
+    }
+
+}

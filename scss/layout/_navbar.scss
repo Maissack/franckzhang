@@ -7,17 +7,15 @@
     align-items: center;
     padding: 15px;
 
-    
     .navbar-left {
         display: flex;
         align-items: center;
-        margin-left: 20%;
+        align-self: flex-start; 
     }
 
     .navbar-right {
         display: flex;
         align-items: center;
-        margin-right: 20%;
     }
 
     .logo-container:first-child {
@@ -41,6 +39,10 @@
             height: 55px;
             width: 55px;
         }
+    }
+
+    .logo {
+        margin-right: 10px;
     }
     
 

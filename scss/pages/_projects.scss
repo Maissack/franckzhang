@@ -3,6 +3,11 @@
 
 .projects {
     text-align: left;
+    margin-left: 200px;
+
+    @media screen and (max-width: 1068px) {
+        margin-left: 0px;
+    }
 
     h2 {
         margin-bottom: 10px;
@@ -14,23 +19,27 @@
     ul {
         list-style-type: none;
         padding: 0;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-left: 1px solid white;
 
         li {
             margin-bottom: 8px;
+            padding-left: 30px;
 
             a {
                 color: $color-h1-h2-p;
                 font-size: $font_size_p-desktop;
                 font-weight: $font_weight_p;
                 text-decoration: none;
-                transition: font-size 0.3s, color 0.3s; /* Ajout de la transition pour la taille et la couleur du texte */
+                transition: font-size 0.3s, color 0.3s; 
 
                 &:hover {
-                    font-size: 110%; // Taille du texte agrandi au survol
+                    font-size: 110%; 
                     color: $color-white;
                 }
 
-                position: relative; /* Positionnement relatif pour contenir l'élément ::before */
+                position: relative; 
 
                 &::before {
                     content: "";
@@ -38,7 +47,7 @@
                     display: block;
                     width: 100%;
                     height: 2px;
-                    bottom: -3px; /* Ajustement de la position du soulignement */
+                    bottom: -3px; 
                     left: 0;
                     background-color: $color-white;
                     transform: scaleX(0);
@@ -47,7 +56,7 @@
                 }
 
                 &:hover::before {
-                    transform: scaleX(1); /* Affichage du soulignement au survol */
+                    transform: scaleX(1);
                 }
             }
         }

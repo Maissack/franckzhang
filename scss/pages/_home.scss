@@ -9,8 +9,8 @@ body {
 .container {
     max-width: 1200px; 
     max-height: 800px;
-    margin: auto; /* Centre l'élément horizontalement */
-    margin-top: calc((100vh - 600px) / 2); /* Centre l'élément verticalement */
+    margin: auto;
+    margin-top: calc((100vh - 600px) / 2); 
     border: 2px solid #ccc; 
 }
 

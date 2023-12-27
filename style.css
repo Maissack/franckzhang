@@ -1,4 +1,3 @@
-@charset "UTF-8";
 footer {
   display: flex;
   justify-content: flex-end;
@@ -18,12 +17,11 @@ footer {
 .navbar .navbar-left {
   display: flex;
   align-items: center;
-  margin-left: 20%;
+  align-self: flex-start;
 }
 .navbar .navbar-right {
   display: flex;
   align-items: center;
-  margin-right: 20%;
 }
 .navbar .logo-container:first-child {
   margin-left: 0;
@@ -43,6 +41,9 @@ footer {
   height: 55px;
   width: 55px;
 }
+.navbar .logo {
+  margin-right: 10px;
+}
 
 body {
   background-color: #10162a;
@@ -51,8 +52,8 @@ body {
 .container {
   max-width: 1200px;
   max-height: 800px;
-  margin: auto; /* Centre l'élément horizontalement */
-  margin-top: calc((100vh - 600px) / 2); /* Centre l'élément verticalement */
+  margin: auto;
+  margin-top: calc((100vh - 600px) / 2);
   border: 2px solid #ccc;
 }
 
@@ -62,13 +63,28 @@ header, .content, footer {
 
 .content {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 0 20px;
 }
 
+.presentation,
+.projects {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.projects {
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1068px) {
+  .content {
+    flex-direction: column;
+  }
+  .presentation,
+  .projects {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .presentation {
   text-align: left;
   max-width: 600px;
@@ -80,16 +96,43 @@ header, .content, footer {
   font-weight: 100;
   color: rgb(209, 209, 209);
 }
+@media screen and (max-width: 768px) {
+  .presentation h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .presentation h1 {
+    font-size: 70px;
+  }
+}
 .presentation p {
   font-size: 16px;
   font-weight: 200;
   color: rgb(209, 209, 209);
   border-left: 1px solid white;
   padding-left: 30px;
+  width: 120%;
+}
+@media screen and (max-width: 768px) {
+  .presentation p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .presentation p {
+    width: 100%;
+  }
 }
 
 .projects {
   text-align: left;
+  margin-left: 200px;
+}
+@media screen and (max-width: 1068px) {
+  .projects {
+    margin-left: 0px;
+  }
 }
 .projects h2 {
   margin-bottom: 10px;
@@ -100,17 +143,21 @@ header, .content, footer {
 .projects ul {
   list-style-type: none;
   padding: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-left: 1px solid white;
 }
 .projects ul li {
   margin-bottom: 8px;
+  padding-left: 30px;
 }
 .projects ul li a {
   color: rgb(209, 209, 209);
   font-size: 16px;
   font-weight: 200;
   text-decoration: none;
-  transition: font-size 0.3s, color 0.3s; /* Ajout de la transition pour la taille et la couleur du texte */
-  position: relative; /* Positionnement relatif pour contenir l'élément ::before */
+  transition: font-size 0.3s, color 0.3s;
+  position: relative;
 }
 .projects ul li a:hover {
   font-size: 110%;
@@ -122,7 +169,7 @@ header, .content, footer {
   display: block;
   width: 100%;
   height: 2px;
-  bottom: -3px; /* Ajustement de la position du soulignement */
+  bottom: -3px;
   left: 0;
   background-color: rgb(255, 255, 255);
   transform: scaleX(0);
@@ -130,7 +177,7 @@ header, .content, footer {
   transition: transform 0.4s ease;
 }
 .projects ul li a:hover::before {
-  transform: scaleX(1); /* Affichage du soulignement au survol */
+  transform: scaleX(1);
 }
 
 * {
