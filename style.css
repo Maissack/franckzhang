@@ -188,6 +188,13 @@ body {
   transform: scaleX(1);
 }
 
+.projects ul li a[href*="Achaka Conseils"],
+.projects ul li a[href*="Conquest of Kingdoms"],
+.projects ul li a[href*=Mongoo],
+.projects ul li a[href*="Homepod mini"] {
+  font-size: 14px; /* Changer la taille du texte des liens spécifiques des projets */
+}
+
 * {
   margin: 0;
   padding: 0;

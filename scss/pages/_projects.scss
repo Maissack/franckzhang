@@ -16,6 +16,8 @@
         color: $color-h1-h2-p;
     }
 
+
+
     ul {
         list-style-type: none;
         padding: 0;
@@ -32,7 +34,8 @@
                 font-size: $font_size_p-desktop;
                 font-weight: $font_weight_p;
                 text-decoration: none;
-                transition: font-size 0.3s, color 0.3s; 
+                transition: font-size 0.3s, color 0.3s;
+
 
                 &:hover {
                     font-size: 110%; 
@@ -61,4 +64,12 @@
             }
         }
     }
+}
+
+
+.projects ul li a[href*='Achaka Conseils'],
+.projects ul li a[href*='Conquest of Kingdoms'],
+.projects ul li a[href*='Mongoo'],
+.projects ul li a[href*='Homepod mini'] {
+    font-size: 14px; /* Changer la taille du texte des liens spécifiques des projets */
 }
