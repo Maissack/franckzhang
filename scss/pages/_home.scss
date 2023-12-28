@@ -1,0 +1,32 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+body {
+    background-color: #10162Aff;
+}
+
+.container {
+    max-width: 1200px;
+    
+    max-height: 850px;
+    
+    margin: auto;
+    border: 2px solid #ccc; 
+    padding: 40px;
+    margin-top: calc((100vh - 600px) / 2);
+}
+
+
+@media screen and (max-width: 1068px) {
+    .container {
+        margin-top: 20px; 
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 20px; 
+    }
+}
+

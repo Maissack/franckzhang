@@ -1,0 +1,52 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+        align-self: flex-start; 
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container:first-child {
+        margin-left: 0;
+    }
+
+    .logo img {
+        filter: brightness(0) invert(1);
+        transition: width 0.3s ease, height 0.3s ease; 
+    
+        &:hover {
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    .logo_profil img {
+        transition: width 0.3s ease, height 0.3s ease;
+
+        &:hover {
+            height: 55px;
+            width: 55px;
+        }
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
+    
+
+}
+
+
+  
