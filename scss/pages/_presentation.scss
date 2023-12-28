@@ -11,6 +11,7 @@
         font-size: $font_size_h1-desktop;
         font-weight: $font_weight_h1;
         color: $color-h1-h2-p;
+        margin-bottom: 10px;
 
         @media screen and (max-width: 768px) {
             font-size: $font_size_h1-mobile; 
@@ -18,6 +19,21 @@
 
         @media screen and (max-width: 480px) {
             font-size: $font_size_h1-mobile; 
+        }
+    }
+
+    h2 {
+        font-size: $font_size_h2-desktop;
+        font-weight: $font_weight_h2;
+        color: $color-h1-h2-p;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            font-size: $font_size_h2-mobile; 
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: $font_size_h2-mobile; 
         }
     }
 
