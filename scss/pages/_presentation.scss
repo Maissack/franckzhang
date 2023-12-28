@@ -7,7 +7,7 @@
     padding: 20px;
     transition: transform 0.5s;
 
-    h1 {
+    .wrapper {
         font-size: $font_size_h1-desktop;
         font-weight: $font_weight_h1;
         color: $color-h1-h2-p;
@@ -20,6 +20,8 @@
         @media screen and (max-width: 480px) {
             font-size: $font_size_h1-mobile; 
         }
+
+        
     }
 
     h2 {
@@ -54,4 +56,6 @@
         }
         
     }
+
+    
 }

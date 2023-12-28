@@ -4,8 +4,18 @@
         var presentationDiv = document.querySelector('.presentation');
     
         if (currentProject === project) {
-            presentationDiv.innerHTML = `<h1>Bienvenue.</h1><p>Je m’appelle Franck Zhang, je suis un développeur full stack basé à Paris. Je recherche une alternance dans le développement web, la data ou la cybersécurité pour 2024-2025 (rythme : 3 semaines en entreprise / 1 semaine à l’école). <br><br> Explorer les mystères du web, disséquer les langages de programmation et expérimenter de nouvelles idées sur mon ordinateur me passionne.</p>`;
+            presentationDiv.innerHTML = `<div class="wrapper">
+                                            <svg>
+                                              <text x="50%" y="50%" dy=".35em" text-anchor="middle">
+                                                Welcome
+                                              </text>
+                                            
+                                            </svg>
+                                          </div>
+                                          <p>Je m’appelle Franck Zhang, je suis un développeur full stack basé à Paris. Je recherche une alternance dans le développement web, la data ou la cybersécurité pour 2024-2025 (rythme : 3 semaines en entreprise / 1 semaine à l’école). <br><br> Explorer les mystères du web, disséquer les langages de programmation et expérimenter de nouvelles idées sur mon ordinateur me passionne.</p>`
+                                          ;
             currentProject = ''; 
+        
         } else {
             var description = getProjectDescription(project);
             if (presentationDiv) {

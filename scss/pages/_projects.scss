@@ -3,10 +3,13 @@
 
 .projects {
     text-align: left;
-    margin-left: 200px;
+    margin-left: 800px;
+    position: fixed; 
+
 
     @media screen and (max-width: 1068px) {
         margin-left: 0px;
+        position: relative;
     }
 
     h2 {
@@ -69,4 +72,7 @@
         }
     }
 }
+
+
+
 
