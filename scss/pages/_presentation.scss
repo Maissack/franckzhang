@@ -1,0 +1,61 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+.presentation {
+    text-align: left;
+    max-width: 600px;
+    padding: 20px;
+    transition: transform 0.5s;
+
+    .wrapper {
+        font-size: $font_size_h1-desktop;
+        font-weight: $font_weight_h1;
+        color: $color-h1-h2-p;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: 768px) {
+            font-size: $font_size_h1-mobile; 
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: $font_size_h1-mobile; 
+        }
+
+        
+    }
+
+    h2 {
+        font-size: $font_size_h2-desktop;
+        font-weight: $font_weight_h2;
+        color: $color-h1-h2-p;
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 768px) {
+            font-size: $font_size_h2-mobile; 
+        }
+
+        @media screen and (max-width: 480px) {
+            font-size: $font_size_h2-mobile; 
+        }
+    }
+
+    p {
+        font-size: $font_size_p-desktop;
+        font-weight: $font_weight_p;
+        color: $color-h1-h2-p;
+        border-left: 1px solid white;
+        padding-left: 30px;
+        width: 120%;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+        
+    }
+
+    
+}

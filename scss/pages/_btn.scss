@@ -1,0 +1,22 @@
+@use '../utils/_typos.scss' as *;
+@use '../variables/_variables.scss' as *;
+
+
+
+.view-site-btn,
+.github-btn {
+    color: white;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: color 0.3s, text-decoration 0.3s;
+    font-size: $font_size_btn-desktop;
+
+    &:hover {
+        color: lightgray;
+        text-decoration: none;
+    }
+}
+
+
