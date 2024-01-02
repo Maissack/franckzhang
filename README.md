@@ -1,15 +1,15 @@
-# Portfolio de Franck ZHANG 👋 🛠️
+# Franck ZHANG's Portfolio 👋 🛠️
 
-## Bienvenue ! 🌟
+## Welcome! 🌟
 
-Bonjour à tous ! Bienvenue sur mon portfolio en ligne où je présente mes projets, compétences et expériences dans le domaine du développement web.
+Hello everyone! Welcome to my online portfolio where I showcase my projects, skills, and experiences in the field of web development.
 
-N'hésitez pas à explorer mes réalisations et à en apprendre davantage sur mes compétences et expériences. Je suis passionné par les nouvelles technologies et j'espère que vous trouverez mon portfolio intéressant.
+Feel free to explore my achievements and learn more about my skills and experiences. I'm passionate about new technologies and I hope you find my portfolio interesting.
 
-Si vous avez des questions, des commentaires ou si vous souhaitez discuter de collaborations potentielles, je vous invite à me contacter par email à [franckzhangpro@gmail.com] 📧.
+If you have any questions, comments, or if you'd like to discuss potential collaborations, please feel free to contact me via email at [franckzhangpro@gmail.com] 📧.
 
 ---
 
-**Crédits :** Je tiens à remercier [dunks1980](https://dunks1980.com), dont la présentation et la structure m'ont inspiré pour la conception de mon propre portfolio.
+**Credits:** I would like to thank [dunks1980](https://dunks1980.com) for inspiring the presentation and structure that influenced the design of my own portfolio.
 
-Merci pour votre visite ! 😊
+Thank you for visiting! 😊
